@@ -45,19 +45,21 @@ from zoo_runner_common.zoo_conf import ZooConf, ZooInputs, ZooOutputs, CWLWorkfl
 ---
 
 ## Components
-Module	Description
-BaseRunner	Abstract runner blueprint all runners must extend
-ZooConf	Parses conf.json, manages job ID, state
-ZooInputs	Parses inputs.json, formats CWL-style parameters
-ZooOutputs	Handles writing and setting output results
-CWLWorkflow	Loads, parses, and analyzes CWL workflows
-ResourceRequirement	Parses and evaluates CWL resource hints/requirements
-wrapper_utils	Provides helper to build wrapped CWL pipeline
-ZooStub	Interacts with ZOO's lenv for progress updates
+
+| Module |	Description |
+| ---- | -------- |
+| BaseRunner |	Abstract runner blueprint all runners must extend |
+| ZooConf |	Parses conf.json, manages job ID, state |
+| ZooInputs |	Parses inputs.json, formats CWL-style parameters |
+| ZooOutputs |	Handles writing and setting output results |
+| CWLWorkflow |	Loads, parses, and analyzes CWL workflows |
+| ResourceRequirement |	Parses and evaluates CWL resource hints/requirements |
+| wrapper_utils |	Provides helper to build wrapped CWL pipeline |
+| ZooStub |	Interacts with ZOO's lenv for progress updates |
+
 ---
 
 ## Used By
 - zoo-wes-runner
 - zoo-argowf-runner
-
-zoo-calrissian-runner
+- zoo-calrissian-runner
